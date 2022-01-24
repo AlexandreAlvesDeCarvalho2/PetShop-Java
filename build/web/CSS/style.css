@@ -1,0 +1,26 @@
+:root {
+    --body-bg:rgb(159, 212, 243); 
+    --colorBackground: rgb(0, 0, 0);
+    --text: rgba(0, 0, 0, 0.911);
+    --border: rgb(97, 255, 97);
+    --houver: rgb(86, 176, 236);
+
+};
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+html, body { height: 100%; }
+
+body{
+  background-color: var(--colorBackground);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+
+
+
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
