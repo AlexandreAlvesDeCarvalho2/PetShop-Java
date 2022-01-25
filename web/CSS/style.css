@@ -1,6 +1,38 @@
 html, body { height: 100%; }
+
+
+:root {
+    --text: rgba(0, 0, 0, 0.911);
+    --BackgroundWhiteBlack: rgb(253, 252, 252, 0.822);
+    --BackgroundBlackWhite: black;
+    --border: rgba(245, 243, 39, 0.92);
+    --background: url("../assets/img/PETSHOP.jpg");
+    --BackgroundYellowBlue: rgba(245, 243, 39, 0.92);
+    --BackgroundBlueYellow: #3366ff;
+    
+
+}
+
+
+.dark-mode{
+    --text: white;
+    --BackgroundWhiteBlack: rgba(0, 0, 0, 0.8);
+    --BackgroundBlackWhite: white;
+    --border: #3366ff;
+    --background: url("../assets/img/DarkModePETSHOP.jpg");
+    --BackgroundYellowBlue: #3366ff;
+    --BackgroundBlueYellow: rgba(215, 255, 0, 1);
+}
+#darkmodebutton{
+    width: 10%;
+    font-size: 100%;
+    border-radius: 30px;
+    padding: 1%;
+}
+
+
 body{
-    background-image: url("../assets/img/PETSHOP.jpg");  
+    background-image: var(--background);  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,39 +48,59 @@ h1{
 .ContainerMenuIndex2{
     margin: 30px 30px 0 50px;
     padding: 0 50px;
-    background-color: #ffffffe7;
+    background-color: var(--BackgroundWhiteBlack);
     width: 160px;
     text-align: center;
     height: 107px;
     padding-bottom: 150px;
+    color: var(--text);
+}
+
+.rowSucesso{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContainerSucesso{
+    margin: 200px;
+    padding: 40px;
+    background-color: var(--BackgroundWhiteBlack);
+    width: 200px;
+    text-align: center;
+    height: 107px;
+    color: var(--text);
+     
 }
 
 .ContainerPetNews{
     margin: 30px;
     padding: 50px;
-    background-color: #ffffffe7;
+    background-color: var(--BackgroundWhiteBlack);
     width: 500px;
     text-align: left;
     height: 400px;
     padding-bottom: 100px;
     overflow: hidden;
+    color: var(--text);
 }
+
+
 
 .ContainerMenuIndex{
     margin: 30px 0 0 30px;
     padding: 50px;
-    background-color: #ffffffe7;
+    background-color: var(--BackgroundWhiteBlack);
     width: 170px;
     text-align: center;
     height: 400px;
     padding-bottom: 100px;
-
+    color: var(--text);
 }
+
 
 .miniContainer{
 
     padding: 5px;
-    background-color: #fffffffd00;
     width: 100%;
     text-align: left;
     height: 200px;
@@ -56,12 +108,9 @@ h1{
 }
 
 .miniContainer2{
-
-    background-color: #fffffffd00;
+    padding: 10px;
     width: 150%;
     text-align: left;
-    height: 200px;
-
 }
 
 #FotoAle{
@@ -86,6 +135,7 @@ input{
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    background-color: white;
 
 }
 
@@ -97,18 +147,18 @@ input{
     display: block;
     width: 150px;
     height: 50px;
-    background: #3366ff;
+    background: var(--BackgroundYellowBlue);
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     line-height: 25px;
     border-color:  #000000;
 }
 .button:hover {
-    background-color: #ffff33; 
-  color: blue;
+    background-color: var(--BackgroundYellowBlue);
+    color: var(--BackgroundBlueYellow);
 }
 
 a {
@@ -119,7 +169,7 @@ table {
 
     border-collapse: collapse;
     width: 100%;
-    background-color: #e5e5e5;
+    background-color: rgba(255,255,255,0.07);
     margin: 0 0 20px;
 
 }
@@ -129,33 +179,34 @@ th, td {
     padding: 8px;
     text-align: center;
     border-bottom: 1px solid rgb(247, 247, 247);
-    color:#000000;
+    color:var(--text);
 
 }
 
 tr:hover {
-    background-color: #feff82;
+    background-color: var(--BackgroundYellowBlue);
 }
 
 .border {
-    border: 3px solid #feff82;
+    border: 3px solid var(--border);
     border-radius: 10px;
 }
 
 .containerFormulario{
     margin: 40px;
     padding: 50px;
-    background-color: #ffffffe7;
+    background-color: var(--BackgroundWhiteBlack); 
     width: 300px;
     text-align: center;
     height: 400px;
     padding-bottom: 100px;
+    color: var(--BackgroundBlackWhite)
 }
 
 .container{
     margin: 30px;
     padding: 50px;
-    background-color: #ffffffe7;
+    background-color: var(--BackgroundWhiteBlack); 
     width: 800px;
     text-align: center;
     height: 400px;

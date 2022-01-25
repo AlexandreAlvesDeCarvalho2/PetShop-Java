@@ -9,6 +9,11 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <script src="JS/index.js"></script>
+        <div>
+            <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
+        </div>
+        
         <div class="rowStartLeft">
             <div>
                 <div class="ContainerMenuIndex2 border">
@@ -42,10 +47,10 @@
             </div>
 
             <div class="ContainerMenuIndex border">
-                
+
                 <h4>Funcionário do mês </h4>
                 <img id="FotoAle" src="assets/img/AlexandreAlves.jpg">
-                
+
                 <div class="miniContainer">
                     <p>Parabéns Alexandre !</p>
                     <p>“As nossas atitudes são contagiosas e é por isso que somos tão gratos pela sua dedicação e por manter uma postura positiva mesmo frente aos desafios, porque isso se reflete em toda a equipe. A sua liderança foi e é fundamental para o sucesso da nossa empresa. Gratidão!”</p>
@@ -53,5 +58,6 @@
 
             </div>
         </div>
+        
     </body>
 </html>  

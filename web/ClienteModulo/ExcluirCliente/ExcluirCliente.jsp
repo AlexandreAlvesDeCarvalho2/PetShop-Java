@@ -9,6 +9,11 @@
         <title>JSP Page</title>
     </head>
     <body>
+        
+                <script src="../../JS/index.js"></script>
+        <div>
+            <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
+        </div>
 
         <div class="row">
 

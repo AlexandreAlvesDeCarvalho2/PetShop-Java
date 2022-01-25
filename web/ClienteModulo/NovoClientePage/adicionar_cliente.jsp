@@ -3,6 +3,21 @@
 <%@page import="DAO.DAOCliente"%>
 
 
+<html>
+    <head>
+        </link> 
+        <script src="https://kit.fontawesome.com/059eb35bb8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../../CSS/style.css"</link>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <script src="../../JS/index.js"></script>
+        <div>
+            <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
+        </div>
+        <div class="rowSucesso">
+            <div class="ContainerSucesso border">
 <%
     Cliente cliente = new Cliente();
     DAOCliente ClienteDao = new DAOCliente();
@@ -28,3 +43,10 @@
     }
     
 %>
+
+
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -11,10 +11,14 @@
         <link rel="stylesheet" type="text/css" href="../../CSS/style.css"</link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body>        
+        <script src="../../JS/index.js"></script>
+        <div>
+            <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
+        </div>
         <div class="row">
             <div class="container border">
-                 <div class='rowStartLeft'> <a href='../../index.jsp'><i class="fas fa-arrow-left"> Voltar</i></a></div>
+                <div class='rowStartLeft'> <a href='../../index.jsp'><i class="fas fa-arrow-left"> Voltar</i></a></div>
                 <div class="rowStartLeft">
                     <form action="consultar_produto.jsp" method="post">
 
