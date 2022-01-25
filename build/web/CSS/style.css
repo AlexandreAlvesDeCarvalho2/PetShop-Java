@@ -1,5 +1,4 @@
 html, body { height: 100%; }
-
 body{
     background-image: url("../assets/img/PETSHOP.jpg");  
     background-repeat: no-repeat;
@@ -8,29 +7,44 @@ body{
     background-attachment: fixed;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
+h1{
+    text-align: center;
+}
+
+.ContainerMenuIndex2{
+    margin: 30px 30px 0 50px;
+    padding: 0 50px;
+    background-color: #ffffffe7;
+    width: 160px;
+    text-align: center;
+    height: 107px;
+    padding-bottom: 150px;
+}
+
+.ContainerPetNews{
+    margin: 30px;
+    padding: 50px;
+    background-color: #ffffffe7;
+    width: 500px;
+    text-align: left;
+    height: 400px;
+    padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .ContainerMenuIndex{
-    margin: 40px;
+    margin: 30px 0 0 30px;
     padding: 50px;
     background-color: #ffffffe7;
-    width: 12%;
+    width: 170px;
     text-align: center;
     height: 400px;
     padding-bottom: 100px;
 
 }
 
-.ContainerPetNews{
-    margin: 40px;
-    padding: 50px;
-    background-color: #ffffffe7;
-    width: 40%;
-    text-align: left;
-    height: 400px;
-    padding-bottom: 100px;   
-}
 .miniContainer{
 
     padding: 5px;
@@ -40,10 +54,11 @@ body{
     height: 200px;
     overflow-y: auto;
 }
+
 .miniContainer2{
-    margin-left: 30px;
+
     background-color: #fffffffd00;
-    width: 100%;
+    width: 150%;
     text-align: left;
     height: 200px;
 
@@ -52,19 +67,14 @@ body{
 #FotoAle{
     height: 180px;
     width: 180px;
-    border-radius: 50% ;
-
-
+    border-radius: 50%;
 }
 
 #FotoTheo{
 
-    height: 300px;
-    width: 300px;
-
-
+    height: 80%;
+    width: 80%;
 }
-
 
 input{
     display: block;
@@ -78,6 +88,7 @@ input{
     font-weight: 300;
 
 }
+
 ::placeholder{
     color: #000000;
 }
@@ -86,14 +97,18 @@ input{
     display: block;
     width: 150px;
     height: 50px;
-    background: #66ff66;
+    background: #3366ff;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: black;
+    color: white;
     font-weight: bold;
     line-height: 25px;
     border-color:  #000000;
+}
+.button:hover {
+    background-color: #ffff33; 
+  color: blue;
 }
 
 a {
@@ -109,7 +124,6 @@ table {
 
 }
 
-
 th, td {
 
     padding: 8px;
@@ -120,11 +134,11 @@ th, td {
 }
 
 tr:hover {
-    background-color: #66ff66;
+    background-color: #feff82;
 }
 
 .border {
-    border: 3px solid #35fd00;
+    border: 3px solid #feff82;
     border-radius: 10px;
 }
 
@@ -136,7 +150,6 @@ tr:hover {
     text-align: center;
     height: 400px;
     padding-bottom: 100px;
-
 }
 
 .container{
@@ -147,26 +160,23 @@ tr:hover {
     text-align: center;
     height: 400px;
     overflow-y: auto;
-
-
 }
-.rowStartLeft{
 
+.rowStartLeft{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-
+    flex-wrap:wrap;
 }
+
 .rowleft{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
 } 
-
 
 .row {
     margin-top: 20px;
@@ -174,8 +184,8 @@ tr:hover {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-
 }
+
 .row2 {
     margin-top: 20px;
     display: flex;
@@ -186,11 +196,7 @@ tr:hover {
 button{
     padding: 0 20px;
     margin-top: 8px;
-    margin-left: 8px;
     border: 3px solid gray;
     border-radius: 30px;
 }
 
-.voltar{
-
-}

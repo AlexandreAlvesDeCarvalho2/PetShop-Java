@@ -28,7 +28,7 @@
                         <label for="telefone">Telefone</label><br>
                     <input type="text" name="telefone"/><br>
 
-                    <input type="submit" value="Enviar"><br>
+                    <button class="button" type="submit">Enviar</button><br>
                     <div class='rowStartLeft'> <a href='../../index.jsp'><i class="fas fa-arrow-left"> Voltar</i></a></div>
 
 

@@ -15,7 +15,7 @@
         <div class="row">
             <div class="container border">
                  <div class='rowStartLeft'> <a href='../../index.jsp'><i class="fas fa-arrow-left"> Voltar</i></a></div>
-                <div class="row">
+                <div class="rowStartLeft">
                     <form action="consultar_produto.jsp" method="post">
 
 
