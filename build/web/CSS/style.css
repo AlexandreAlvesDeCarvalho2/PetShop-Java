@@ -1,26 +1,196 @@
-:root {
-    --body-bg:rgb(159, 212, 243); 
-    --colorBackground: rgb(0, 0, 0);
-    --text: rgba(0, 0, 0, 0.911);
-    --border: rgb(97, 255, 97);
-    --houver: rgb(86, 176, 236);
-
-};
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
-
 html, body { height: 100%; }
 
 body{
-  background-color: var(--colorBackground);  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    background-image: url("../assets/img/PETSHOP.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+.ContainerMenuIndex{
+    margin: 40px;
+    padding: 50px;
+    background-color: #ffffffe7;
+    width: 12%;
+    text-align: center;
+    height: 400px;
+    padding-bottom: 100px;
+
+}
+
+.ContainerPetNews{
+    margin: 40px;
+    padding: 50px;
+    background-color: #ffffffe7;
+    width: 40%;
+    text-align: left;
+    height: 400px;
+    padding-bottom: 100px;   
+}
+.miniContainer{
+
+    padding: 5px;
+    background-color: #fffffffd00;
+    width: 100%;
+    text-align: left;
+    height: 200px;
+    overflow-y: auto;
+}
+.miniContainer2{
+    margin-left: 30px;
+    background-color: #fffffffd00;
+    width: 100%;
+    text-align: left;
+    height: 200px;
+
+}
+
+#FotoAle{
+    height: 180px;
+    width: 180px;
+    border-radius: 50% ;
 
 
+}
+
+#FotoTheo{
+
+    height: 300px;
+    width: 300px;
 
 
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+::placeholder{
+    color: #000000;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: #66ff66;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    border-color:  #000000;
+}
+
+a {
+    text-decoration:none
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #e5e5e5;
+    margin: 0 0 20px;
+
+}
+
+
+th, td {
+
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(247, 247, 247);
+    color:#000000;
+
+}
+
+tr:hover {
+    background-color: #66ff66;
+}
+
+.border {
+    border: 3px solid #35fd00;
+    border-radius: 10px;
+}
+
+.containerFormulario{
+    margin: 40px;
+    padding: 50px;
+    background-color: #ffffffe7;
+    width: 300px;
+    text-align: center;
+    height: 400px;
+    padding-bottom: 100px;
+
+}
+
+.container{
+    margin: 30px;
+    padding: 50px;
+    background-color: #ffffffe7;
+    width: 800px;
+    text-align: center;
+    height: 400px;
+    overflow-y: auto;
+
+
+}
+.rowStartLeft{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.rowleft{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+} 
+
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.row2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px;
+}
+
+button{
+    padding: 0 20px;
+    margin-top: 8px;
+    margin-left: 8px;
+    border: 3px solid gray;
+    border-radius: 30px;
+}
+
+.voltar{
+
 }

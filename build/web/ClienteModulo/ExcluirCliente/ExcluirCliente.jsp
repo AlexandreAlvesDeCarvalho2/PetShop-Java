@@ -2,27 +2,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-  
+        </link> 
+        <script src="https://kit.fontawesome.com/059eb35bb8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../../CSS/style.css"</link>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Formulário Usuário</h1>
-        <form method="POST" action="corpoExcluirCliente.jsp"> 
-            <label for="id">Id</label><br>
-            <input type="text" name="id" value="<%=request.getParameter("id")%>"/><br
 
-            <label for="nome">Nome</label><br>
-            <input type="text" name="nome" value="<%=request.getParameter("nome")%>"/><br
+        <div class="row">
 
-            <label for="email">Email</label><br>
-            <input type="email" name="email" value="<%=request.getParameter("email")%>"/><br
+            <div class="containerFormulario border">
+                <h1>Excluir Cliente</h1>
+                <form method="POST" action="corpoExcluirCliente.jsp"> 
+                    <label for="id">Id</label><br>
+                    <input type="text" name="id" value="<%=request.getParameter("id")%>"/><br
 
-            <label for="telefone">Telefone</label><br>
-            <input type="text" name="telefone" value="<%=request.getParameter("telefone")%>"/><br>  
+                        <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" value="<%=request.getParameter("nome")%>"/><br
 
-            <input type="submit" value="Excluir">
+                        <label for="email">Email</label><br>
+                    <input type="email" name="email" value="<%=request.getParameter("email")%>"/><br
 
-        </form>
+                        <label for="telefone">Telefone</label><br>
+                    <input type="text" name="telefone" value="<%=request.getParameter("telefone")%>"/><br>  
+
+                    <input type="submit" value="Excluir"><br>
+                    <div class='rowStartLeft'> <a href='../../index.jsp'><i class="fas fa-arrow-left"> Voltar</i></a></div>
+                </form>
+
+            </div>
+        </div>
+
+
     </body>
 </html>
