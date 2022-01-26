@@ -20,25 +20,27 @@
             <div class="ContainerSucesso border">
 
 
-<%
-    Cliente Cliente = new Cliente();
-    DAOCliente ClienteDao = new DAOCliente();
-    
-    try {
-        
-        int id = (Integer.parseInt(request.getParameter("id")));
+                <%
+                    Cliente Cliente = new Cliente();
+                    DAOCliente ClienteDao = new DAOCliente();
 
-        ClienteDao.remover(id);
-        
-        out.print("Cliente deletado com sucesso");
-        out.print("<meta http-equiv='refresh' content='3; url=../ConsultarClientePage/consultar_cliente.jsp'/>");
-        
-    } catch (Exception erro) {
-        throw new RuntimeException("Erro ao inserir novo cliente: " + erro);
-        
-    }
-    
-%>
+                    try {
+
+                        int id = (Integer.parseInt(request.getParameter("id")));
+
+                        ClienteDao.remover(id);
+
+                        out.print("Cliente deletado com sucesso");
+                        out.print("<meta http-equiv='refresh' content='3; url=../ConsultarClientePage/consultar_cliente.jsp'/>");
+
+                    } catch (Exception erro) {
+                        out.print("<p style='color:red;'> OPS! Alguma coisa deu errado!<br>"
+                                + "Verifique se você digitou corretamente as informações</p>");
+                        out.print("<meta http-equiv='refresh' content='4; url=../../index.jsp'/>");
+
+                    }
+
+                %>
 
 
             </div>

@@ -19,27 +19,29 @@
         <div class="rowSucesso">
             <div class="ContainerSucesso border">
 
-<%
-    Produto Produto = new Produto();
-    DAOProduto ProdutoDAO = new DAOProduto();
-    
-    try {
-        
-        int id = (Integer.parseInt(request.getParameter("id")));
+                <%
+                    Produto Produto = new Produto();
+                    DAOProduto ProdutoDAO = new DAOProduto();
 
-        ProdutoDAO.remover(id);
-        
-        out.print("Produto com id: "+ request.getParameter("id") +" deletado com sucesso");
-        out.print("<meta http-equiv='refresh' content='3; url=../ConsultarProdutoPage/consultar_produto.jsp'/>");
-        
-    } catch (Exception erro) {
-        throw new RuntimeException("Erro ao inserir novo produto: " + erro);
-        
-    }
-%>
+                    try {
 
+                        int id = (Integer.parseInt(request.getParameter("id")));
+
+                        ProdutoDAO.remover(id);
+
+                        out.print("Produto com id: " + request.getParameter("id") + " deletado com sucesso");
+                        out.print("<meta http-equiv='refresh' content='3; url=../ConsultarProdutoPage/consultar_produto.jsp'/>");
+
+                    } catch (Exception erro) {
+                        out.print("<p style='color:red;'> OPS! Alguma coisa deu errado!<br>"
+                                + "Verifique se você digitou corretamente as informações</p>");
+                        out.print("<meta http-equiv='refresh' content='4; url=../../index.jsp'/>");
+
+                    }
+                %>
             </div>
         </div>
     </body>
 
 </html>
+

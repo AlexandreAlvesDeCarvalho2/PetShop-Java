@@ -35,7 +35,9 @@
                         out.print("<meta http-equiv='refresh' content='3; url= ../../index.jsp'/>");
 
                     } catch (Exception erro) {
-                        throw new RuntimeException("Erro ao inserir novo produto: " + erro);
+                        out.print("<p style='color:red;'> OPS! Alguma coisa deu errado!<br>"
+                                + "Verifique se você digitou corretamente as informações</p>");
+                        out.print("<meta http-equiv='refresh' content='4; url=../../index.jsp'/>");
 
                     }
 

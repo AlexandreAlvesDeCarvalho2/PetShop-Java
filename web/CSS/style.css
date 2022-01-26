@@ -13,7 +13,6 @@ html, body { height: 100%; }
 
 }
 
-
 .dark-mode{
     --text: white;
     --BackgroundWhiteBlack: rgba(0, 0, 0, 0.8);

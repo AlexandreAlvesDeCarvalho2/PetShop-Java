@@ -19,32 +19,32 @@
         <div class="rowSucesso">
             <div class="ContainerSucesso border">
 
-<%
-    Produto produto = new Produto();
-    DAOProduto ProdutoDAO = new DAOProduto();
-    
-    try {
-        
-        String id = request.getParameter("id");
-        String nome = request.getParameter("nome");
-        String quantidade = request.getParameter("quantidade");
- 
-        
-        produto.setId(Integer.parseInt(id));
-        produto.setNome(nome);
-        produto.setQuantidade(Integer.parseInt(quantidade));
-        ProdutoDAO.atualizarProduto(produto);
-        
-        
-        out.print("Produto "+ request.getParameter("nome") +" Editado com sucesso");
-        out.print("<meta http-equiv='refresh' content='3, url= ../ConsultarProdutoPage/consultar_produto.jsp'/>");
-        
-    } catch (Exception erro) {
-        throw new RuntimeException("Erro ao editar produto: " + erro);
-        
-    }
-    
-%>
+                <%
+                    Produto produto = new Produto();
+                    DAOProduto ProdutoDAO = new DAOProduto();
+
+                    try {
+
+                        String id = request.getParameter("id");
+                        String nome = request.getParameter("nome");
+                        String quantidade = request.getParameter("quantidade");
+
+                        produto.setId(Integer.parseInt(id));
+                        produto.setNome(nome);
+                        produto.setQuantidade(Integer.parseInt(quantidade));
+                        ProdutoDAO.atualizarProduto(produto);
+
+                        out.print("Produto " + request.getParameter("nome") + " Editado com sucesso");
+                        out.print("<meta http-equiv='refresh' content='3, url= ../ConsultarProdutoPage/consultar_produto.jsp'/>");
+
+                    } catch (Exception erro) {
+                        out.print("<p style='color:red;'> OPS! Alguma coisa deu errado!<br>"
+                                + "Verifique se você digitou corretamente as informações</p>");
+                        out.print("<meta http-equiv='refresh' content='4; url=../../index.jsp'/>");
+
+                    }
+
+                %>
 
 
 

@@ -18,31 +18,33 @@
         </div>
         <div class="rowSucesso">
             <div class="ContainerSucesso border">
-<%
-    Cliente cliente = new Cliente();
-    DAOCliente ClienteDao = new DAOCliente();
-    
-    try {
-        
-        String nome = request.getParameter("nome");
-        String email = request.getParameter("email");
-        String telefone = request.getParameter("telefone");
-        
-        cliente.setNome(nome);
-        cliente.setEmail(email);
-        cliente.setTelefone(telefone);
+                <%
+                    Cliente cliente = new Cliente();
+                    DAOCliente ClienteDao = new DAOCliente();
 
-        ClienteDao.InserirCliente(cliente);
-        
-        out.print("Cliente inserido com sucesso");
-        out.print("<meta http-equiv='refresh' content='3; url= ../../index.jsp'/>");
-        
-    } catch (Exception erro) {
-        throw new RuntimeException("Erro ao inserir novo cliente: " + erro);
-        
-    }
-    
-%>
+                    try {
+
+                        String nome = request.getParameter("nome");
+                        String email = request.getParameter("email");
+                        String telefone = request.getParameter("telefone");
+
+                        cliente.setNome(nome);
+                        cliente.setEmail(email);
+                        cliente.setTelefone(telefone);
+
+                        ClienteDao.InserirCliente(cliente);
+
+                        out.print("Cliente inserido com sucesso");
+                        out.print("<meta http-equiv='refresh' content='3; url= ../../index.jsp'/>");
+
+                    } catch (Exception erro) {
+                        out.print("<p style='color:red;'> OPS! Alguma coisa deu errado!<br>"
+                                + "Verifique se você digitou corretamente as informações</p>");
+                        out.print("<meta http-equiv='refresh' content='4; url=../../index.jsp'/>");
+
+                    }
+
+                %>
 
 
             </div>
