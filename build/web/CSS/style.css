@@ -23,10 +23,10 @@ html, body { height: 100%; }
     --BackgroundBlueYellow: rgba(215, 255, 0, 1);
 }
 #darkmodebutton{
-    width: 10%;
-    font-size: 100%;
+    width: 80px;
+    font-size: 10px;
     border-radius: 30px;
-    padding: 1%;
+    padding: 2px;
 }
 
 

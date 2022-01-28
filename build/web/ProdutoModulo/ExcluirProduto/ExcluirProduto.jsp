@@ -10,13 +10,14 @@
     </head>
     <body>
 
+        <script src="../../JS/index.js"></script>
+        <div>
+            <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
+        </div>
+
+
+
         <div class="row">
-
-            <script src="../../JS/index.js"></script>
-            <div>
-                <button id="darkmodebutton" onclick="darkmode()">LIGHT</button>
-            </div>
-
             <div class="containerFormulario border">
                 <h1>Excluir Produto</h1>
                 <form method="POST" action="corpoExcluirProduto.jsp"> 
